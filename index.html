@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jouw Camino</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="leaflet.css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <button class="lightning-button" onclick="toggleMaps()">
+        <img id="lightning-icon" src="button-bliksem.webp" alt="Donkere tijden" width="40" height="40">
+    </button>
+    <button class="manual-button" onclick="openManualPopup()">
+        <img id="manual-icon" src="manual-icon.webp" alt="Lees de introductie" width="40" height="40">
+    </button>
+
+    <script src="leaflet.js"></script>
+    <script src="jouwcamino.js"></script>
+</body>
+</html>
