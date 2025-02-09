@@ -136,9 +136,9 @@ async function changeManualPage(page) {
 async function fetchContent(filename) {
     try {
         const response = await fetch(filename);
-        return response.ok ? await response.text() : "<p>Content not available.</p>";
+        return response.ok ? await response.text() : "<p>Content not available</p>";
     } catch {
-        return "<p>Content not available.</p>";
+        return "<p>Content not available</p>";
     }
 }
 
@@ -206,3 +206,8 @@ async function changePage(circleNumber, mapId, tabNumber, increment) {
     tabContent.setAttribute("data-page", newPage);
     tabContent.innerHTML = newContent;
 }
+
+window.addEventListener("load", function () {
+    console.log("Volledige pagina is geladen!");
+    openManualPopup(); // open documentatie popup
+});
