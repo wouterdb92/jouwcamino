@@ -211,3 +211,4 @@ window.addEventListener("load", function () {
     console.log("Volledige pagina is geladen!");
     openManualPopup(); // open documentatie popup
 });
+
